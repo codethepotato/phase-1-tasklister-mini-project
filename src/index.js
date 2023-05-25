@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  document.addEventListener("submit", () => {
-    let shrek = document.getElementById(id = "tasks")
-    shrek.append(document.getElementById(id = "new-task-description"))
-    Event.preventDefault();
+  const form = document.querySelector("form")
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    // can we console.log what is in the input?
+    console.log(event);
   });
 });
